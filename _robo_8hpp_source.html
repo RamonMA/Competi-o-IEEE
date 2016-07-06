@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Competição IEEE: Código-Fonte de C:/Users/Almeida/Documents/Arduino/Competição IEEE/lib/Robo/Robo.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="gim.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Competição IEEE
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_20b999a4e17f74f699cdda5264334c91.html">Robo</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Robo.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_robo_8hpp.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef ROBO_HPP</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define ROBO_HPP</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_motor_8hpp.html">Motor.hpp</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_robo.html">Robo</a>{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="comment">//**Motor esquerdo*/</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="class_motor.html">Motor</a> motor1;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="class_motor.html">Motor</a> motor2;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  byte motor1Pin1;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  byte motor1Pin2;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  byte motor2Pin1;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  byte motor2Pin2;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">int</span> count;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="class_robo.html#a199b334c5e43eb7efbd78eaaf83a5802">Robo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; motor1Pin1, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; motor1Pin2, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; motor2Pin1, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; motor2Pin2);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_robo.html#a966ae161866f3c9f0f8a196eb0d2225e">frente</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; pwm) <span class="keyword">const</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_robo.html#a5c3163a280df44b0d4cc2dcd6dc49e23">tras</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; pwm) <span class="keyword">const</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_robo.html#a0cad06a3728bbdba4666583a89e8c6f5">rotacionar</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; angulo, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; pwm);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_robo.html#a7f2552d2b3713d02dced17d5900274d6">parar</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="_motor_8hpp_html"><div class="ttname"><a href="_motor_8hpp.html">Motor.hpp</a></div></div>
+<div class="ttc" id="class_robo_html"><div class="ttname"><a href="class_robo.html">Robo</a></div><div class="ttdoc">Controlar um robo com dois motores. </div><div class="ttdef"><b>Definition:</b> Robo.h:13</div></div>
+<div class="ttc" id="class_motor_html"><div class="ttname"><a href="class_motor.html">Motor</a></div><div class="ttdoc">Esta classe serve para controlar o motor através da PWM. </div><div class="ttdef"><b>Definition:</b> Motor.h:12</div></div>
+<div class="ttc" id="class_robo_html_a966ae161866f3c9f0f8a196eb0d2225e"><div class="ttname"><a href="class_robo.html#a966ae161866f3c9f0f8a196eb0d2225e">Robo::frente</a></div><div class="ttdeci">void frente(const int &amp;pwm) const </div><div class="ttdoc">O robo anda para frente. </div><div class="ttdef"><b>Definition:</b> Robo.cpp:13</div></div>
+<div class="ttc" id="class_robo_html_a0cad06a3728bbdba4666583a89e8c6f5"><div class="ttname"><a href="class_robo.html#a0cad06a3728bbdba4666583a89e8c6f5">Robo::rotacionar</a></div><div class="ttdeci">void rotacionar(const float &amp;angulo, const int &amp;pwm, const int &amp;suavizar)</div><div class="ttdoc">Rotaciona a direção do robo para esquerda ou direita. </div><div class="ttdef"><b>Definition:</b> Robo.cpp:29</div></div>
+<div class="ttc" id="class_robo_html_a199b334c5e43eb7efbd78eaaf83a5802"><div class="ttname"><a href="class_robo.html#a199b334c5e43eb7efbd78eaaf83a5802">Robo::Robo</a></div><div class="ttdeci">Robo(const int &amp;motor1Pin1, const int &amp;motor1Pin2, const int &amp;motor2Pin1, const int &amp;motor2Pin2)</div><div class="ttdoc">Cria um robo de dois motores. </div><div class="ttdef"><b>Definition:</b> Robo.cpp:3</div></div>
+<div class="ttc" id="class_robo_html_a5c3163a280df44b0d4cc2dcd6dc49e23"><div class="ttname"><a href="class_robo.html#a5c3163a280df44b0d4cc2dcd6dc49e23">Robo::tras</a></div><div class="ttdeci">void tras(const int &amp;pwm) const </div><div class="ttdoc">O robo anda para trás. </div><div class="ttdef"><b>Definition:</b> Robo.cpp:21</div></div>
+<div class="ttc" id="class_robo_html_a7f2552d2b3713d02dced17d5900274d6"><div class="ttname"><a href="class_robo.html#a7f2552d2b3713d02dced17d5900274d6">Robo::parar</a></div><div class="ttdeci">void parar() const </div><div class="ttdoc">Para o robo. </div><div class="ttdef"><b>Definition:</b> Robo.cpp:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

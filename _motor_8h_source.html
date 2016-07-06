@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Competição IEEE: Código-Fonte de C:/Users/Almeida/Documents/Arduino/Competição IEEE/API_DE_CONTROLE/Motor.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="gim.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Competição IEEE
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6b2de040e07842c851246d18e3e0e07c.html">API_DE_CONTROLE</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Motor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_motor_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef MOTOR_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define MOTOR_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_motor.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_motor.html">Motor</a>{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  byte <span class="keyword">const</span> motorPin1;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  byte <span class="keyword">const</span> motorPin2;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_motor.html#a50a459c8fee309b65162e465ac3b6205">Motor</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; _motorPin1, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; _motorPin2);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_motor.html#a67cbeffae0d3af5207dba35e2328e8f5">pwm</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; motorPin,<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; velocidade) <span class="keyword">const</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_motor_html_a67cbeffae0d3af5207dba35e2328e8f5"><div class="ttname"><a href="class_motor.html#a67cbeffae0d3af5207dba35e2328e8f5">Motor::pwm</a></div><div class="ttdeci">void pwm(const int &amp;motorPin, const int &amp;velocidade) const </div><div class="ttdoc">Controla a velocidade do motor através do uso da PWM. </div><div class="ttdef"><b>Definition:</b> Motor.cpp:11</div></div>
+<div class="ttc" id="class_motor_html"><div class="ttname"><a href="class_motor.html">Motor</a></div><div class="ttdoc">Esta classe serve para controlar o motor através da PWM. </div><div class="ttdef"><b>Definition:</b> Motor.h:12</div></div>
+<div class="ttc" id="class_motor_html_a50a459c8fee309b65162e465ac3b6205"><div class="ttname"><a href="class_motor.html#a50a459c8fee309b65162e465ac3b6205">Motor::Motor</a></div><div class="ttdeci">Motor(const int &amp;_motorPin1, const int &amp;_motorPin2)</div><div class="ttdef"><b>Definition:</b> Motor.cpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
