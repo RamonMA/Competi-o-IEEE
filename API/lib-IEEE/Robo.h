@@ -8,6 +8,7 @@
 #define ROBO_H
 
 #include <Arduino.h>
+#include <Ultrasonic.h>
 #include "Motor.h"
 
 class Robo{
@@ -26,6 +27,12 @@ private:
   /**Entrada 2 do motor 2*/
   byte motor2Pin2;
   /**Contador para rotacionar*/
+
+  /**Entrada trig do ultrassom*/
+  byte trig;
+  /**Entrada echo do ultrassom*/
+  byte echo;
+
   int count;
 
 public:
@@ -34,7 +41,8 @@ public:
   * @param motorPin1 Motor esquerdo do Robô
   * @param motorPin2 Motor direito do Robô
   */
-  Robo(const int& motor1Pin1, const int& motor1Pin2, const int& motor2Pin1, const int& motor2Pin2);
+  Robo(const int& motor1Pin1, const int& motor1Pin2, const int& motor2Pin1, const int& motor2Pin2,
+       const int& trig, const int& echo);
   /**
   * @brief O robo anda para frente.
   * @param pwm Seta a velocidade de ambos os motores.
@@ -54,15 +62,20 @@ public:
   * @param angulo Se o ângulo for positovo vira para direita,
   *               se for negativo vira para direita.
   * @param pwm Velocidade de um dos motores com o qual o robo está rotacionando.
-  * @param suavizar Velocidade com que o outro motor irá suavizar a curva
   */
-  void rotacionar(const float& angulo, const int& pwm, const int& suavizar);
+  void rotacionar(const float& angulo, const int& pwm);
   /**
   * @brief Para o robo.
   * @see frente()
   * @see tras()
   */
   void parar() const;
+  /**
+  * @brief Mostra a distancia apartir de um certo limite.
+  * @param limite Distância mínima.
+  */
+  float range(const float& limite) const;
+
 };
 
 #endif
