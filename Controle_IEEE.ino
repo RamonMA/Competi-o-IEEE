@@ -1,6 +1,6 @@
 #include <Robo.h>
 
-Robo robo(2,3,4,5);
+Robo robo(2,3,4,5,8,9);
 char buffer[18];
 
 void setup() {
@@ -32,7 +32,7 @@ void splitString(char* data) {
     setFrente(parameter);
     setTras(parameter);
     setParar(parameter);
-   // setSensor(parameter);
+    sensor(parameter);
     parameter = strtok(NULL, " ,");
   }
   // Limpa o texto e os buffers seriais
@@ -96,14 +96,15 @@ void setTras(char* data){
   robo.tras(velocidade);
 }
 
-/*
-void setSensor(char* data){
+void sensor(char* data){
   int sensorData;
-  if ((data[0] == 'f') || (data[0] == 'F')) {
+  int limite = 30;
+  if ((data[0] == 's') || (data[0] == 'S')) {
     sensorData = strtol(data + 1, NULL, 10);
-    sensorData = constrain(sensorData, 0, 255);
+    sensorData = constrain(sensorData, 0, limite);
     Serial.print("sensor: ");
-    Serial.println(sensorData);
+    //Serial.println(sensorData);
+    Serial.println(robo.range(limite)); 
   }
 }
-*/
+
