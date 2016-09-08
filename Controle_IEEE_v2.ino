@@ -1,11 +1,11 @@
 #include <Robo.h>
 
-const int BUFFER_LENGTH = 5;
-
 struct Data{
   char ref;
   int value;
 };
+
+const int BUFFER_LENGTH = 5;
 
 Robo robo(11,6,5,3);
 Data data[2];
